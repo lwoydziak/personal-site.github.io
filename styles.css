@@ -64,9 +64,23 @@ h1 {
   letter-spacing: -0.075em;
 }
 
-.lead {
+.intro-copy {
   margin: 28px 0 0;
   max-width: 680px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.13rem);
+  line-height: 1.65;
+}
+
+.intro-copy p {
+  margin: 0;
+}
+
+.intro-copy p + p {
+  margin-top: 18px;
+}
+
+.intro-copy .lead {
   color: var(--muted);
   font-size: clamp(1.08rem, 1.7vw, 1.35rem);
   line-height: 1.65;
