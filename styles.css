@@ -197,6 +197,30 @@ h1 {
   text-align: right;
 }
 
+.social-link {
+  align-items: center;
+}
+
+.social-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.07);
+}
+
+.social-mark svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 @media (max-width: 820px) {
   .page-shell { padding-top: 36px; }
   .hero, .cards { grid-template-columns: 1fr; }
@@ -204,4 +228,6 @@ h1 {
   h1 { font-size: clamp(3rem, 16vw, 5rem); }
   .link-list a { flex-direction: column; gap: 6px; }
   .link-list span { text-align: left; }
+  .social-link { flex-direction: row; gap: 14px; }
+  .social-link span:last-child { text-align: right; }
 }
